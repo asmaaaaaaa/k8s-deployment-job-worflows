@@ -48,7 +48,7 @@ jobs:
         sed -i 's|<your-container-registry>/<your-image>:latest|${{ env.ECR_REGISTRY }}/hello-world:latest|g' deployment.yml
 
     - name: Set up kubectl
-      uses: azure/setup-kubectl@v2
+      uses: azure/setup-kubectl@v4
       with:
         version: 'latest'
 
