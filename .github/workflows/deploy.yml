@@ -57,4 +57,4 @@ jobs:
         echo "${{ secrets.KUBECONFIG }}" > kubeconfig.yaml
         kubectl apply -f k8s/configmap.yml --kubeconfig=kubeconfig.yaml
         kubectl apply -f k8s/service.yml --kubeconfig=kubeconfig.yaml
-        kubectl apply -f k8s/deployment.yml --kubeconfig=kubeconfig.yaml
+        kubectl apply -f deployment.yml --kubeconfig=kubeconfig.yaml
